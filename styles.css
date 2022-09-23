@@ -1,0 +1,350 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  height: 75px;
+  background-color: #34393f;
+  display: flex;
+  justify-content: space-around;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+nav .logo img {
+  width: 8rem;
+}
+nav .logo h4 {
+  color: #FFF;
+  font-weight: 400;
+}
+nav .nav-info {
+  display: flex;
+  align-items: center;
+}
+nav .nav-info ol {
+  display: flex;
+  margin-bottom: 0;
+}
+nav .nav-info ol li {
+  list-style: none;
+  margin-right: 20px;
+  font-weight: 550;
+  font-size: 1rem;
+}
+nav .nav-info ol li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+nav .nav-info ol .white a {
+  color: #FFF;
+  text-decoration: none;
+}
+nav .nav-info ol .gray {
+  color: gray;
+}
+nav .nav-info ol .gray a {
+  text-decoration: none;
+  color: gray;
+}
+nav .nav-info ol .green a {
+  text-decoration: none;
+  color: green;
+}
+
+header {
+  background-image: url(./img/ba1.jpg);
+  background-position-y: -10rem;
+  position: static;
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .img-layer {
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4));
+}
+header .content-header {
+  color: #FFF;
+  width: 500px;
+  text-align: end;
+  float: right;
+  margin-top: 50px;
+}
+header .content-header button a {
+  text-decoration: none;
+  color: #FFF;
+}
+header .content-header button .btn-white {
+  color: white;
+}
+header .content-header button .btn-white:active, header .content-header button .btn-white:hover {
+  color: #1A3745;
+}
+
+.section-1 {
+  width: 950px;
+  margin: auto;
+}
+.section-1 .title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-1 .title p {
+  margin: 5px 0 0 0;
+}
+.section-1 .title h2 {
+  margin: 0 0 5px 0;
+}
+.section-1 .content-card {
+  margin-bottom: 10px;
+}
+
+.section-2 {
+  margin-top: 30px;
+  display: flex;
+}
+.section-2 .info-image {
+  padding: 20px;
+  background: #34393F;
+  color: white;
+  border-left: 1px solid white;
+}
+.section-2 .info-image button a {
+  text-decoration: none;
+  color: #FFF;
+}
+.section-2 .info-image button a:active, .section-2 .info-image button a:hover {
+  color: #1A3745;
+}
+.section-2 .image-beach {
+  width: 50%;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  width: 900px;
+}
+.section-3 .title {
+  text-transform: uppercase;
+}
+.section-3 .title p {
+  margin: auto;
+}
+.section-3 u {
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+.section-3 u:hover {
+  cursor: pointer;
+}
+.section-3 form {
+  width: 800px;
+}
+.section-3 form button a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer {
+  height: 120px;
+  background: #1A3745;
+  padding: 35px 0;
+}
+footer ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ol li {
+  color: #FFF;
+  list-style: none;
+  margin-right: 50px;
+  width: 100px;
+  font-weight: 600;
+}
+footer ol li a {
+  text-decoration: none;
+  color: #FFF;
+}
+footer ol li a:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    background-position-y: 0rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+  nav {
+    padding: 0 100px;
+  }
+  header {
+    background-position-y: 0px;
+    width: 100%;
+  }
+  header .img-layer {
+    padding: 0px;
+    width: 100%;
+  }
+  header .content-header {
+    width: 100%;
+    text-align: center;
+  }
+  header .content-header h2 {
+    font-size: 2rem;
+  }
+  header .content-header p {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+  header .content-header button {
+    display: flex;
+    margin: 15px auto;
+  }
+  .section-1 {
+    width: 100%;
+    margin: 0%;
+  }
+  .section-1 .content-card .card {
+    margin: auto;
+  }
+  .section-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-2 .image-beach {
+    width: 100%;
+  }
+  .section-2 .info-image {
+    text-align: center;
+  }
+  .section-2 .info-image h2 {
+    font-size: 1.8rem;
+  }
+  .section-2 .info-image p {
+    font-size: 0.9rem;
+  }
+  .section-3 {
+    width: 100%;
+    text-align: center;
+  }
+  .section-3 p {
+    font-size: 0.9rem;
+  }
+  .section-3 form .nombre, .section-3 form .apellido, .section-3 form .tarea, .section-3 form button {
+    width: 450px;
+    margin: auto;
+  }
+  footer {
+    height: auto;
+    padding: 0%;
+  }
+  footer ol {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  footer ol li {
+    margin: 20px 15px 10px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    width: 303px;
+  }
+  nav {
+    padding: 0 25px;
+  }
+  header {
+    background-position-y: 0px;
+    width: 100%;
+  }
+  header .img-layer {
+    padding: 0px;
+    width: 100%;
+  }
+  header .content-header {
+    width: 100%;
+    text-align: center;
+  }
+  header .content-header h2 {
+    font-size: 1.5rem;
+  }
+  header .content-header p {
+    font-size: 0.92rem;
+    padding: 0 20px;
+  }
+  header .content-header button {
+    display: flex;
+    margin: 15px auto;
+  }
+  .section-1 {
+    width: 100%;
+    margin: 0%;
+  }
+  .section-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-2 .image-beach {
+    width: 100%;
+  }
+  .section-2 .info-image {
+    text-align: center;
+  }
+  .section-2 .info-image h2 {
+    font-size: 1.8rem;
+  }
+  .section-2 .info-image p {
+    font-size: 0.9rem;
+  }
+  .section-3 {
+    width: 100%;
+    text-align: center;
+  }
+  .section-3 p {
+    font-size: 0.9rem;
+  }
+  .section-3 form .nombre, .section-3 form .apellido, .section-3 form .tarea, .section-3 form button {
+    width: 301px;
+    margin: auto;
+  }
+  footer {
+    height: auto;
+    padding: 0%;
+  }
+  footer ol {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  footer ol li {
+    margin: 10px 15px 10px 0px;
+  }
+}/*# sourceMappingURL=styles.css.map */
